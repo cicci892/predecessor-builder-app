@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12141c">
+<title>Predecessor Builder</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Predecessor Builder</h1>
+  <p class="sub">Scegli eroe, ruolo e stile per la build. Aggiungi l'avversario: build su misura e counterpick.</p>
+</header>
+
+<main>
+  <section class="panel controls">
+    <label>Avversario di corsia
+      <select id="opp"></select>
+    </label>
+    <label>Il tuo eroe
+      <select id="hero"></select>
+    </label>
+    <div class="group">
+      <span class="lbl">Ruolo</span>
+      <div id="roles" class="chips"></div>
+    </div>
+    <div class="group">
+      <span class="lbl">Stile</span>
+      <div id="styles" class="chips"></div>
+    </div>
+    <div id="oppctl" class="group oppctl" hidden>
+      <span class="lbl">Ruolo e stile dell'avversario</span>
+      <div id="oroles" class="chips"></div>
+      <div id="ostyles" class="chips"></div>
+    </div>
+    <label id="enemyrow">Squadra nemica
+      <select id="enemy"></select>
+    </label>
+  </section>
+
+  <section id="result" class="result"></section>
+</main>
+
+<footer>
+  <p>Build, cristalli, augment ed Eternal vengono dalle partite ranked (statistiche di pred.gg, versione 1.18, lettura del 5 novembre). Il modello di combattimento adatta la build all'avversario e spiega le scelte.
+  Dati di gioco aggiornati al: <span id="updated">-</span>. Non affiliato a Omeda Studios né a pred.gg.</p>
+</footer>
+
+<script src="data/data.js"></script>
+<script src="data/it.js"></script>
+<script src="data/reference/ref.js"></script>
+<script src="data/pesi.js"></script>
+<script src="effects.js"></script>
+<script src="richtext.js"></script>
+<script src="kit.js"></script>
+<script src="itemfx.js"></script>
+<script src="model.js"></script>
+<script src="meta.js"></script>
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
